@@ -1,0 +1,19 @@
+﻿thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #ffffff; /* Tambahkan warna background agar terlihat jelas */
+}
+.dropdown-menu .dropdown-menu {
+    position: absolute;
+    left: 100%; /* Sub-menu muncul di samping kanan */
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s;
+}
+
+.dropdown-menu li:hover > .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
